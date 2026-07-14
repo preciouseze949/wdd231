@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #f4f4f4;
+    color: #222
+}
+
+header {
+    background: #1d3557;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative
+}
+
+.logo {
+    display: flex;
+    gap: .7rem;
+    align-items: center
+}
+
+.logo img {
+    width: 48px
+}
+
+#menuButton {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1d3557
+}
+
+nav.open {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none
+}
+
+nav a:hover,
+.active {
+    background: #457b9d
+}
+
+.hero {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem
+}
+
+.card,
+.certificate {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1)
+}
+
+.buttons {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0
+}
+
+.buttons button {
+    flex: 1;
+    padding: .75rem
+}
+
+#courses {
+    display: grid;
+    gap: 1rem
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px
+}
+
+.completed {
+    background: #d8f3dc
+}
+
+footer {
+    text-align: center;
+    background: #1d3557;
+    color: #fff;
+    padding: 2rem;
+    margin-top: 2rem
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}

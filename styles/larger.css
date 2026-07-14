@@ -1,0 +1,24 @@
+@media(min-width:768px) {
+    #menuButton {
+        display: none
+    }
+
+    nav {
+        display: block !important;
+        position: static;
+        width: auto;
+        background: none
+    }
+
+    nav ul {
+        display: flex
+    }
+
+    .hero {
+        grid-template-columns: 2fr 1fr
+    }
+
+    #courses {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+    }
+}

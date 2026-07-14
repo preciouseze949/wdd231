@@ -1,0 +1,1 @@
+currentYear.textContent=new Date().getFullYear();lastModified.textContent='Last Modified: '+document.lastModified;

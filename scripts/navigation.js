@@ -1,0 +1,1 @@
+const b=document.getElementById('menuButton');const n=document.getElementById('navigation');b.onclick=()=>n.classList.toggle('open');

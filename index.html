@@ -3,84 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description"
-        content="WDD 231, Precious Anietem, a site that show the list of courses that is currently offered in the web and computer programming case.">
+        content="WDD 231 course home page showcasing web development projects, coursework, and programming skills.">
     <meta name="author" content="Precious Anietem">
-    <title>WDD231 | Precious Anietem</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>WDD231 Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <script src="scripts/scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-
-        <nav class="other">
-            <img src="images/path_me.jpg" alt="Precious Anietem" width="80" height="90">
-            <span class="name">
-                <h1>Precious C. Anietem</h1>
-            </span>
-        </nav>
-        <nav class="nav">
+        <div class="logo"><img src="images/logo.svg" alt="Logo"><span>Precious Anietem</span></div>
+        <button id="menuButton">☰</button>
+        <nav id="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Chamber</a></li>
-                <li><a href="https://github.com/preciouseze949/wdd231">Github profile</a></li>
-                <li><a href="www.linkedin.com/in/precious-eze949">LinkedIn</a></li>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 id="home">Home</h1>
-        <div class="container">
-            <section id="course">
-                <div>
-                    <h2>Course Work</h2>
-
-                </div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
-            <section id="ondo">
-                <div>
-                    <h2>Ondo Nigeria</h2>
-                </div>
-                <nav class="onim"><img src="images/ondo.jpg" alt="" width="100">
-                    <p>Ondo, Nigeria</p>
-                </nav>
-
-            </section>
-            <section id="web">
-                <div>
-                    <h2>Web and Computer Programming Certificate</h2>
-                </div>
-                <nav class="nav1 ">
-                    <button id="all"> All </button>
-                    <button id="cse"> CSE </button>
-                    <button id="wdd"> WDD</button>
-                </nav>
-                <nav class="nav2">
-                    <button class="redbut">CSE 110</button>
-                    <button class="redbut">WDD 130</button>
-                    <button class="redbut">CSE 110</button>
-                    <button class="whibut">CSE 210</button>
-                    <button class="redbut">WDD 131</button>
-                    <button class="whibut">WDD 231</button>
-
-
-                </nav>
-            </section>
-        </div>
+        <h1 style="margin-left: 40px;">Home</h1>
+        <section class="hero">
+            <article class="card">
+                <h2>Course Work</h2>
+                <p>Welcome to my WDD 231 homepage.</p>
+            </article>
+            <article class="card">
+                <h2>Student Photo</h2><img src="images/path_me.jpg" alt="Profile">
+            </article>
+        </section>
+        <section class="certificate">
+            <h2>Web & Computer Programming Certificate</h2>
+            <div class="buttons"><button id="allCourses">All</button><button id="wddCourses">WDD</button><button
+                    id="cseCourses">CSE</button></div>
+            <div id="courses"></div>
+            <p>Total Credits: <span id="creditTotal"></span></p>
+        </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Precious Anietem, Ondo State Nigeria</p>
-        <p>lastModified: <span id="last-modified"></span></p>
+        <p>&copy; <span id="currentYear"></span> Precious Anietem | Nigeria</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
