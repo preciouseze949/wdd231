@@ -4,6 +4,10 @@
     box-sizing: border-box
 }
 
+main h1 {
+    margin-left: 40px;
+}
+
 body {
     font-family: Poppins, sans-serif;
     background: #f4f4f4;
