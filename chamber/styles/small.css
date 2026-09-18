@@ -1,0 +1,595 @@
+/* ====================================================
+   ONDO CITY CHAMBER OF COMMERCE
+   MOBILE / SMALL SCREEN STYLES
+==================================================== */
+
+
+/* ----------------------------------------------------
+   ROOT VARIABLES
+---------------------------------------------------- */
+
+:root {
+    --primary: #0b5d3b;
+    --primary-dark: #073d28;
+    --secondary: #d4a017;
+    --secondary-dark: #a97900;
+
+    --background: #f5f7f5;
+    --surface: #ffffff;
+    --surface-dark: #e8eee9;
+
+    --text: #1f2933;
+    --text-light: #52606d;
+
+    --border: #d9e2dc;
+
+    --success: #146c43;
+
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    --radius: 12px;
+
+    --max-width: 1200px;
+}
+
+
+/* ----------------------------------------------------
+   BODY
+---------------------------------------------------- */
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ----------------------------------------------------
+   GENERAL CONTAINER
+---------------------------------------------------- */
+
+.container {
+    width: min(92%, var(--max-width));
+    margin: 0 auto;
+}
+
+
+/* ----------------------------------------------------
+   HEADER
+---------------------------------------------------- */
+
+.site-header {
+    background-color: var(--surface);
+    border-bottom: 4px solid var(--secondary);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.header-container {
+    width: min(94%, var(--max-width));
+    margin: 0 auto;
+
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+
+/* ----------------------------------------------------
+   BRAND
+---------------------------------------------------- */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand img {
+    width: 52px;
+    height: 52px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    color: var(--primary);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.brand-subtitle {
+    color: var(--text-light);
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+/* ----------------------------------------------------
+   MENU BUTTON
+---------------------------------------------------- */
+
+.menu-button {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 8px;
+}
+
+.menu-button span {
+    width: 23px;
+    height: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/* ----------------------------------------------------
+   NAVIGATION
+---------------------------------------------------- */
+
+.main-navigation {
+    display: none;
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+
+    background-color: var(--surface);
+
+    border-top: 1px solid var(--border);
+
+    z-index: 10;
+}
+
+.main-navigation.open {
+    display: block;
+}
+
+.main-navigation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-navigation a {
+    display: block;
+
+    padding: 1rem 1.25rem;
+
+    color: var(--text);
+    font-weight: 600;
+
+    border-bottom: 1px solid var(--border);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.main-navigation a:hover {
+    background-color: var(--surface-dark);
+    color: var(--primary);
+}
+
+.main-navigation a.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+
+/* ----------------------------------------------------
+   PAGE HEADING
+---------------------------------------------------- */
+
+.page-heading {
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-dark),
+            var(--primary)
+        );
+
+    color: white;
+
+    padding: 3.5rem 0;
+}
+
+.eyebrow {
+    color: #f1cf68;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+
+    margin-bottom: 0.5rem;
+}
+
+.page-heading h1 {
+    font-size: clamp(2rem, 8vw, 3.2rem);
+    margin-bottom: 0.75rem;
+}
+
+.page-heading p:not(.eyebrow) {
+    max-width: 680px;
+    color: #edf5f0;
+}
+
+
+/* ----------------------------------------------------
+   DIRECTORY SECTION
+---------------------------------------------------- */
+
+.directory-section {
+    padding: 2.5rem 0 4rem;
+}
+
+.directory-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    margin-bottom: 2rem;
+}
+
+.directory-toolbar h2 {
+    color: var(--primary);
+    font-size: 1.65rem;
+}
+
+.directory-toolbar p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+
+/* ----------------------------------------------------
+   VIEW BUTTONS
+---------------------------------------------------- */
+
+.view-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-button {
+    padding: 0.7rem 1rem;
+
+    border: 2px solid var(--primary);
+    border-radius: 7px;
+
+    background-color: white;
+    color: var(--primary);
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.view-button:hover,
+.view-button.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+
+/* ----------------------------------------------------
+   MEMBER GRID
+---------------------------------------------------- */
+
+.members-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+}
+
+
+/* ----------------------------------------------------
+   MEMBER CARD
+---------------------------------------------------- */
+
+.member-card {
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--primary);
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ----------------------------------------------------
+   MEMBER IMAGE
+---------------------------------------------------- */
+
+.member-image {
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.5rem;
+
+    background-color: #edf2ee;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ----------------------------------------------------
+   MEMBER INFORMATION
+---------------------------------------------------- */
+
+.member-information {
+    padding: 1.35rem;
+}
+
+.member-information h3 {
+    color: var(--primary);
+    font-size: 1.25rem;
+
+    margin: 0.4rem 0 0.7rem;
+}
+
+.member-information address {
+    color: var(--text-light);
+
+    font-size: 0.88rem;
+
+    margin-bottom: 0.75rem;
+}
+
+.member-industry {
+    color: var(--secondary-dark);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.member-phone {
+    font-size: 0.88rem;
+    margin-bottom: 0.9rem;
+}
+
+.member-phone a {
+    color: var(--primary);
+}
+
+.member-description {
+    color: var(--text-light);
+
+    font-size: 0.88rem;
+
+    margin-bottom: 1.2rem;
+}
+
+
+/* ----------------------------------------------------
+   MEMBERSHIP BADGES
+---------------------------------------------------- */
+
+.membership-badge {
+    display: inline-block;
+
+    padding: 0.35rem 0.65rem;
+
+    border-radius: 20px;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.level-1 {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.level-2 {
+    background-color: #dfe5e8;
+    color: #37474f;
+}
+
+.level-3 {
+    background-color: #fff0bd;
+    color: #795600;
+}
+
+
+/* ----------------------------------------------------
+   WEBSITE BUTTON
+---------------------------------------------------- */
+
+.website-link {
+    display: inline-block;
+
+    padding: 0.65rem 1rem;
+
+    background-color: var(--primary);
+    color: white;
+
+    border-radius: 6px;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.website-link:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+
+/* ----------------------------------------------------
+   LIST VIEW
+---------------------------------------------------- */
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.75rem;
+}
+
+.members-list .member-card {
+    display: flex;
+
+    border-top: none;
+    border-left: 5px solid var(--primary);
+}
+
+.members-list .member-image {
+    display: none;
+}
+
+.members-list .member-information {
+    width: 100%;
+
+    padding: 1rem 1.25rem;
+}
+
+.members-list .member-description {
+    display: none;
+}
+
+.members-list .member-information h3 {
+    margin-top: 0.35rem;
+}
+
+.members-list .website-link {
+    padding: 0.45rem 0.8rem;
+}
+
+
+/* ----------------------------------------------------
+   ERROR MESSAGE
+---------------------------------------------------- */
+
+.error-message {
+    grid-column: 1 / -1;
+
+    background-color: white;
+
+    border-left: 5px solid #b91c1c;
+
+    padding: 2rem;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.error-message h2 {
+    color: #991b1b;
+    margin-bottom: 0.5rem;
+}
+
+
+/* ----------------------------------------------------
+   FOOTER
+---------------------------------------------------- */
+
+.site-footer {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.footer-container {
+    width: min(92%, var(--max-width));
+    margin: 0 auto;
+
+    padding: 3rem 0;
+
+    display: grid;
+    gap: 2rem;
+}
+
+.site-footer h2 {
+    font-size: 1rem;
+
+    color: #f1cf68;
+
+    margin-bottom: 0.8rem;
+}
+
+.footer-brand p,
+.footer-contact,
+.footer-development {
+    color: #d9e8df;
+    font-size: 0.85rem;
+}
+
+.footer-contact a {
+    color: white;
+}
+
+.footer-contact a:hover {
+    color: #f1cf68;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+
+    padding: 1.25rem;
+
+    color: #d9e8df;
+
+    font-size: 0.78rem;
+}
+
+
+/* ----------------------------------------------------
+   ACCESSIBILITY
+---------------------------------------------------- */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover businesses and services in the Ondo City Chamber of Commerce directory.">
+
+    <meta name="author" content="Precious Anietem">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Ondo City Chamber of Commerce">
+    <meta property="og:description" content="Explore businesses, services, and opportunities in Ondo City, Nigeria.">
+    <meta property="og:image" content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <title>Ondo City Chamber of Commerce | Directory</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a class="brand" href="../index.html">
+                <img src="images/favicon.svg" alt="Ondo City Chamber logo">
+                <div class="brand-text">
+                    <span class="brand-name">Ondo City</span>
+                    <span class="brand-subtitle">Chamber of Commerce</span>
+                </div>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="main-navigation" class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="directory.html" class="active">Directory</a>
+                    </li>
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-heading">
+            <div class="container">
+                <p class="eyebrow">CONNECT • GROW • PROSPER</p>
+                <h1>Business Directory</h1>
+                <p>
+                    Discover local businesses, services, and organizations
+                    serving Ondo City and the surrounding community.
+                </p>
+            </div>
+        </section>
+
+        <section class="directory-section">
+            <div class="container">
+
+                <div class="directory-toolbar">
+                    <div>
+                        <h2>Our Members</h2>
+                        <p>Explore businesses that are part of our community.</p>
+                    </div>
+
+                    <div class="view-buttons" aria-label="Directory view options">
+                        <button id="grid-view" class="view-button active" type="button"
+                            aria-label="Display businesses as a grid">
+                            ▦ Grid
+                        </button>
+
+                        <button id="list-view" class="view-button" type="button"
+                            aria-label="Display businesses as a list">
+                            ☰ List
+                        </button>
+                    </div>
+                </div>
+
+                <div id="members-container" class="members-grid">
+                    <!-- Members are loaded from members.json using JavaScript -->
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>Ondo City Chamber of Commerce</h2>
+                <p>
+                    Supporting local businesses and encouraging
+                    economic growth in Ondo City.
+                </p>
+            </div>
+
+            <div class="footer-contact">
+                <h2>Contact</h2>
+                <address>
+                    Ondo City, Ondo State<br>
+                    Nigeria<br>
+                    <a href="mailto:info@ondocitychamber.example">
+                        info@ondocitychamber.example
+                    </a><br>
+                    <a href="tel:+2348000000000">
+                        +234 800 000 0000
+                    </a>
+                </address>
+            </div>
+
+            <div class="footer-development">
+                <h2>Development</h2>
+                <p>WDD 231</p>
+                <p>Developed by Precious Anietem</p>
+                <p>
+                    Last Modification:
+                    <span id="last-modified"></span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Ondo City Chamber of Commerce.
+                All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

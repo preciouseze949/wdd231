@@ -1,0 +1,150 @@
+/* ====================================================
+   ONDO CITY CHAMBER OF COMMERCE
+   LARGE SCREEN STYLES
+==================================================== */
+
+
+/* ----------------------------------------------------
+   TABLET
+---------------------------------------------------- */
+
+@media screen and (min-width: 640px) {
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .directory-toolbar {
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .footer-container {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+}
+
+
+/* ----------------------------------------------------
+   DESKTOP
+---------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+
+    .header-container {
+        min-height: 88px;
+    }
+
+
+    /* Hide hamburger */
+
+    .menu-button {
+        display: none;
+    }
+
+
+    /* Desktop navigation */
+
+    .main-navigation {
+        display: block;
+
+        position: static;
+
+        background: transparent;
+
+        border: none;
+    }
+
+    .main-navigation ul {
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 0.35rem;
+    }
+
+    .main-navigation a {
+        border: none;
+
+        padding: 0.65rem 0.9rem;
+
+        border-radius: 6px;
+    }
+
+    .main-navigation a:hover {
+        background-color: #edf2ee;
+    }
+
+    .main-navigation a.active {
+        background-color: var(--primary);
+        color: white;
+    }
+
+
+    /* Page heading */
+
+    .page-heading {
+        padding: 5rem 0;
+    }
+
+
+    /* Directory */
+
+    .directory-section {
+        padding: 4rem 0 5rem;
+    }
+
+
+    /* Three columns */
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* List view */
+
+    .members-list .member-card {
+        display: grid;
+
+        grid-template-columns: 180px 1fr;
+    }
+
+    .members-list .member-image {
+        display: flex;
+
+        height: 100%;
+    }
+
+    .members-list .member-description {
+        display: block;
+    }
+
+}
+
+
+/* ----------------------------------------------------
+   WIDE DESKTOP
+---------------------------------------------------- */
+
+@media screen and (min-width: 1100px) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-image {
+        height: 210px;
+    }
+
+    .brand-name {
+        font-size: 1.3rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.76rem;
+    }
+
+}

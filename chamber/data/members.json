@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Ondo Heritage Foods",
+        "address": "12 Oba Adesimbo Road, Ondo City, Ondo State",
+        "phone": "+234 803 111 2233",
+        "website": "https://example.com",
+        "image": "ondo-heritage-foods.webp",
+        "membershipLevel": 3,
+        "description": "A local food business providing traditional Ondo delicacies, packaged foods, and catering services.",
+        "industry": "Food & Catering"
+    },
+    {
+        "name": "Sunrise Digital Solutions",
+        "address": "24 Yaba Street, Ondo City, Ondo State",
+        "phone": "+234 805 222 3344",
+        "website": "https://example.com",
+        "image": "sunrise-digital.webp",
+        "membershipLevel": 2,
+        "description": "A technology company offering web design, digital marketing, branding, and business technology services.",
+        "industry": "Technology"
+    },
+    {
+        "name": "Royal Oak Furniture",
+        "address": "8 Ondo-Ilesha Road, Ondo City, Ondo State",
+        "phone": "+234 806 333 4455",
+        "website": "https://example.com",
+        "image": "royal-oak-furniture.webp",
+        "membershipLevel": 3,
+        "description": "Furniture makers specializing in quality home, office, and commercial furniture.",
+        "industry": "Furniture"
+    },
+    {
+        "name": "Adesuwa Fashion House",
+        "address": "17 Oke Eda Road, Ondo City, Ondo State",
+        "phone": "+234 807 444 5566",
+        "website": "https://example.com",
+        "image": "adesuwa-fashion.webp",
+        "membershipLevel": 1,
+        "description": "A fashion business offering African-inspired clothing, tailoring, and fashion accessories.",
+        "industry": "Fashion"
+    },
+    {
+        "name": "Green Valley Agro Services",
+        "address": "31 Ifira Road, Ondo City, Ondo State",
+        "phone": "+234 808 555 6677",
+        "website": "https://example.com",
+        "image": "green-valley-agro.webp",
+        "membershipLevel": 2,
+        "description": "An agricultural business providing farm inputs, advisory services, and agricultural products.",
+        "industry": "Agriculture"
+    },
+    {
+        "name": "First Choice Pharmacy",
+        "address": "6 Cathedral Road, Ondo City, Ondo State",
+        "phone": "+234 809 666 7788",
+        "website": "https://example.com",
+        "image": "first-choice-pharmacy.webp",
+        "membershipLevel": 2,
+        "description": "A community pharmacy providing health products, wellness supplies, and professional pharmacy services.",
+        "industry": "Health & Wellness"
+    },
+    {
+        "name": "Heritage Event Centre",
+        "address": "15 Oke-Oka Road, Ondo City, Ondo State",
+        "phone": "+234 810 777 8899",
+        "website": "https://example.com",
+        "image": "heritage-event-centre.webp",
+        "membershipLevel": 1,
+        "description": "An event venue providing facilities for weddings, conferences, meetings, and community events.",
+        "industry": "Events & Hospitality"
+    },
+    {
+        "name": "Bright Future Academy",
+        "address": "42 Igbado Road, Ondo City, Ondo State",
+        "phone": "+234 811 888 9900",
+        "website": "https://example.com",
+        "image": "bright-future-academy.webp",
+        "membershipLevel": 3,
+        "description": "An educational institution focused on quality learning and developing future community leaders.",
+        "industry": "Education"
+    }
+]
