@@ -148,3 +148,65 @@
     }
 
 }
+
+/* =========================================
+HOME PAGE - LARGER SCREENS
+========================================= */
+
+@media screen and (min-width: 640px) {
+
+    .hero-content {
+        padding: 3rem;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .home-hero,
+    .home-hero>img {
+        min-height: 600px;
+        height: 600px;
+    }
+
+    .hero-content {
+        padding-left: max(3rem,
+                calc((100vw - var(--max-width)) / 2));
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3rem, 5vw, 4.5rem);
+    }
+
+    .hero-content>p:not(.hero-label) {
+        font-size: 1.1rem;
+    }
+
+    .home-section {
+        padding: 5rem 1.5rem;
+    }
+
+    .weather-container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .home-hero,
+    .home-hero>img {
+        min-height: 650px;
+        height: 650px;
+    }
+}

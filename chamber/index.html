@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    ```
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Connect with businesses, events, resources, and opportunities through the Ondo City Chamber of Commerce in Nigeria.">
+
+    <meta name="author" content="Precious Anietem">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ondo City Chamber of Commerce">
+
+    <meta property="og:description"
+        content="Discover local businesses, events, resources, and opportunities in Ondo City, Nigeria.">
+
+    <meta property="og:image" content="images/ondo-hero.webp">
+
+    <meta property="og:url" content="https://preciouseze949.github.io/wdd231/chamber/">
+
+    <meta property="og:type" content="website">
+
+    <title>Ondo City Chamber of Commerce | Home</title>
+
+    <link rel="icon" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+    ```
+
+</head>
+
+<body>
+
+    ```
+    <header class="site-header">
+        <div class="header-container">
+
+            <a class="brand" href="index.html" aria-label="Ondo City Chamber of Commerce home">
+                <img src="images/favicon.svg" alt="" width="55" height="55">
+
+                <div>
+                    <span class="brand-name">
+                        Ondo City Chamber
+                    </span>
+
+                    <span class="brand-subtitle">
+                        Of Commerce
+                    </span>
+                </div>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a class="active" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html">
+                            Directory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">
+                            Join
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">
+                            Discover
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="home-hero">
+
+            <img src="images/ondo-hero.webp" alt="Ondo City community and local business area">
+
+            <div class="hero-content">
+                <p class="hero-label">
+                    ONDO CITY • ONDO STATE • NIGERIA
+                </p>
+
+                <h1>
+                    Building a Stronger Business Community
+                </h1>
+
+                <p>
+                    Connect with local businesses, discover community
+                    opportunities, and grow together through the Ondo City
+                    Chamber of Commerce.
+                </p>
+
+                <a class="hero-button" href="join.html">
+                    Join the Chamber
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- CURRENT EVENTS -->
+        <section class="home-section events-section">
+
+            <div class="section-heading">
+                <p class="section-label">
+                    What's Happening
+                </p>
+
+                <h2>
+                    Current Events
+                </h2>
+
+                <p>
+                    Stay informed about activities and opportunities
+                    happening within our business community.
+                </p>
+            </div>
+
+            <div class="events-grid">
+
+                <article class="event-card">
+                    <div class="event-date">
+                        <span>15</span>
+                        <small>OCT</small>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Business Networking Meetup
+                        </h3>
+
+                        <p>
+                            Meet local entrepreneurs and business owners
+                            while building valuable professional connections.
+                        </p>
+
+                        <p class="event-details">
+                            <strong>Time:</strong> 10:00 AM
+                        </p>
+
+                        <p class="event-details">
+                            <strong>Location:</strong> Ondo City Business Centre
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="event-card">
+                    <div class="event-date">
+                        <span>24</span>
+                        <small>OCT</small>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Small Business Growth Workshop
+                        </h3>
+
+                        <p>
+                            Learn practical strategies for marketing,
+                            customer service, and business development.
+                        </p>
+
+                        <p class="event-details">
+                            <strong>Time:</strong> 1:00 PM
+                        </p>
+
+                        <p class="event-details">
+                            <strong>Location:</strong> Chamber Conference Hall
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- WEATHER -->
+        <section class="home-section weather-section">
+
+            <div class="section-heading">
+                <p class="section-label">
+                    Local Conditions
+                </p>
+
+                <h2>
+                    Ondo City Weather
+                </h2>
+
+                <p>
+                    Check current conditions and the upcoming temperature
+                    forecast before planning your activities.
+                </p>
+            </div>
+
+
+            <div class="weather-container">
+
+                <div class="current-weather">
+
+                    <h3>
+                        Current Weather
+                    </h3>
+
+                    <div class="weather-current-content">
+
+                        <img id="weather-icon" src="images/weather.png" alt="" width="80" height="80">
+
+                        <div>
+                            <p id="current-temperature" class="temperature">
+                                --°C
+                            </p>
+
+                            <p id="current-description">
+                                Loading weather...
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="forecast">
+
+                    <h3>
+                        3-Day Forecast
+                    </h3>
+
+                    <div id="forecast-container" class="forecast-grid">
+                        <p>
+                            Loading forecast...
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSINESS SPOTLIGHTS -->
+        <section class="home-section spotlight-section">
+
+            <div class="section-heading">
+                <p class="section-label">
+                    Chamber Members
+                </p>
+
+                <h2>
+                    Business Spotlights
+                </h2>
+
+                <p>
+                    Discover some of the businesses helping Ondo City's
+                    economy grow.
+                </p>
+            </div>
+
+            <div id="spotlight-container" class="spotlight-grid">
+                <p>
+                    Loading business spotlights...
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>
+                    Ondo City Chamber of Commerce
+                </h2>
+
+                <p>
+                    Supporting local businesses and encouraging
+                    economic growth in Ondo City.
+                </p>
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <address>
+                    Ondo City, Ondo State, Nigeria
+                </address>
+
+                <p>
+                    <a href="mailto:info@ondocitychamber.example">
+                        info@ondocitychamber.example
+                    </a>
+                </p>
+
+                <p>
+                    <a href="tel:+2348000000000">
+                        +234 800 000 0000
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h3>
+                    Connect
+                </h3>
+
+                <p>
+                    Follow the chamber and discover opportunities
+                    in our local business community.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Ondo City Chamber of Commerce
+            </p>
+
+            <p>
+                Precious Anietem | WDD 231
+            </p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+    ```
+
+</body>
+
+</html>
