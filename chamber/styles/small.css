@@ -1012,3 +1012,378 @@ border-radius: 8px;
 background-color: #fff3cd;
 color: #664d03;
 }
+
+
+
+/* =========================================
+JOIN PAGE
+========================================= */
+
+.join-section {
+padding: 3rem 1rem 4rem;
+background-color: var(--background);
+}
+
+.join-layout {
+display: grid;
+grid-template-columns: 1fr;
+gap: 2rem;
+max-width: var(--max-width);
+margin: 0 auto;
+}
+
+/* =========================================
+FORM
+========================================= */
+
+.join-form-container {
+padding: 1.5rem;
+border-radius: var(--radius);
+background-color: var(--surface);
+box-shadow: var(--shadow);
+}
+
+.join-form-heading {
+margin-bottom: 1.5rem;
+}
+
+.join-form-heading h2,
+.membership-heading h2 {
+margin-bottom: 0.5rem;
+color: var(--primary-dark);
+}
+
+.join-form-heading p:last-child,
+.membership-heading p:last-child {
+color: var(--text-light);
+}
+
+.membership-form {
+display: grid;
+gap: 1.1rem;
+}
+
+.membership-form > label {
+display: grid;
+gap: 0.4rem;
+color: var(--text);
+font-weight: 600;
+}
+
+.required {
+color: #b42318;
+}
+
+.membership-form input[type="text"],
+.membership-form input[type="email"],
+.membership-form input[type="tel"],
+.membership-form textarea {
+width: 100%;
+padding: 0.8rem;
+border: 1px solid var(--border);
+border-radius: 6px;
+background-color: #fff;
+color: var(--text);
+}
+
+.membership-form textarea {
+resize: vertical;
+}
+
+.membership-form input:focus,
+.membership-form textarea:focus {
+outline: 3px solid rgba(212, 160, 23, 0.3);
+border-color: var(--secondary);
+}
+
+.membership-form fieldset {
+display: grid;
+gap: 0.65rem;
+margin: 0;
+padding: 1rem;
+border: 1px solid var(--border);
+border-radius: 8px;
+}
+
+.membership-form legend {
+padding: 0 0.4rem;
+color: var(--primary-dark);
+font-weight: 700;
+}
+
+.radio-option {
+display: flex;
+align-items: center;
+gap: 0.6rem;
+padding: 0.7rem;
+border-radius: 6px;
+background-color: var(--background);
+cursor: pointer;
+}
+
+.radio-option input {
+width: auto;
+}
+
+.membership-price {
+margin-left: auto;
+color: var(--primary);
+font-size: 0.85rem;
+font-weight: 600;
+}
+
+.submit-button {
+width: 100%;
+padding: 1rem;
+border: none;
+border-radius: 6px;
+background-color: var(--primary);
+color: white;
+font-weight: 700;
+cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+background-color: var(--primary-dark);
+}
+
+/* =========================================
+MEMBERSHIP CARDS
+========================================= */
+
+.membership-levels {
+display: grid;
+gap: 1rem;
+}
+
+.membership-heading {
+margin-bottom: 0.5rem;
+}
+
+.membership-card {
+padding: 1.25rem;
+border-radius: var(--radius);
+background-color: white;
+border-left: 5px solid var(--primary);
+box-shadow: var(--shadow);
+
+
+opacity: 0;
+transform: translateY(25px);
+
+animation: membershipEntrance 0.7s ease forwards;
+
+}
+
+.membership-card:nth-child(2) {
+animation-delay: 0.15s;
+}
+
+.membership-card:nth-child(3) {
+animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+animation-delay: 0.45s;
+}
+
+.membership-card:nth-child(5) {
+animation-delay: 0.6s;
+}
+
+.membership-number {
+display: block;
+margin-bottom: 0.35rem;
+color: var(--secondary-dark);
+font-size: 0.75rem;
+font-weight: 700;
+letter-spacing: 0.1em;
+}
+
+.membership-card h3 {
+margin-bottom: 0.4rem;
+color: var(--primary-dark);
+}
+
+.membership-card p {
+margin-bottom: 1rem;
+color: var(--text-light);
+}
+
+.membership-np {
+border-left-color: #6b7280;
+}
+
+.membership-bronze {
+border-left-color: #a66a3f;
+}
+
+.membership-silver {
+border-left-color: #8b949e;
+}
+
+.membership-gold {
+border-left-color: var(--secondary);
+}
+
+.modal-link {
+padding: 0.55rem 0.8rem;
+border: 1px solid var(--primary);
+border-radius: 5px;
+background-color: transparent;
+color: var(--primary);
+font-weight: 600;
+}
+
+.modal-link:hover,
+.modal-link:focus {
+background-color: var(--primary);
+color: white;
+}
+
+/* =========================================
+MODALS
+========================================= */
+
+.membership-modal {
+width: min(90%, 550px);
+padding: 0;
+border: none;
+border-radius: var(--radius);
+box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.membership-modal::backdrop {
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+position: relative;
+padding: 2rem;
+}
+
+.modal-content h2 {
+margin-bottom: 0.5rem;
+color: var(--primary-dark);
+}
+
+.modal-price {
+margin-bottom: 1.25rem;
+color: var(--secondary-dark);
+font-weight: 700;
+}
+
+.modal-content ul {
+display: grid;
+gap: 0.7rem;
+padding-left: 1.2rem;
+list-style: disc;
+}
+
+.modal-content li {
+color: var(--text-light);
+}
+
+.modal-close {
+position: absolute;
+top: 0.75rem;
+right: 0.75rem;
+width: 38px;
+height: 38px;
+border: none;
+border-radius: 50%;
+background-color: var(--background);
+color: var(--text);
+font-size: 1.5rem;
+line-height: 1;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+background-color: var(--primary);
+color: white;
+}
+
+/* =========================================
+ENTRANCE ANIMATION
+========================================= */
+
+@keyframes membershipEntrance {
+
+
+from {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+}
+
+/* =========================================
+REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+
+.membership-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+}
+
+
+}
+
+
+
+/* =========================================
+THANK YOU PAGE
+========================================= */
+
+.thankyou-container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.submission-details {
+display: grid;
+gap: 0.75rem;
+margin-bottom: 2rem;
+}
+
+.submission-item {
+display: grid;
+gap: 0.25rem;
+padding: 1rem;
+border-left: 4px solid var(--primary);
+border-radius: 6px;
+background-color: var(--background);
+}
+
+.submission-item span {
+color: var(--text-light);
+font-size: 0.85rem;
+font-weight: 500;
+}
+
+.submission-item strong {
+color: var(--primary-dark);
+overflow-wrap: anywhere;
+}
+
+.thankyou-container .hero-button {
+display: inline-block;
+background-color: var(--primary);
+color: white;
+}
+
+.thankyou-container .hero-button:hover {
+background-color: var(--primary-dark);
+}

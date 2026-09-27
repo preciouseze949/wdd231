@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    ```
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Apply for membership with the Ondo City Chamber of Commerce and grow your business network.">
+
+    <meta name="author" content="Precious Anietem">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Join the Ondo City Chamber of Commerce">
+
+    <meta property="og:description" content="Apply for membership and connect with businesses in Ondo City.">
+
+    <meta property="og:image" content="images/favicon.svg">
+
+    <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/wdd231/chamber/join.html">
+
+    <meta property="og:type" content="website">
+
+    <title>Join | Ondo City Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+    ```
+
+</head>
+
+<body>
+
+    ```
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a class="brand" href="index.html" aria-label="Ondo City Chamber of Commerce home">
+
+                <img src="images/favicon.svg" alt="" width="55" height="55">
+
+                <div>
+                    <span class="brand-name">
+                        Ondo City Chamber
+                    </span>
+
+                    <span class="brand-subtitle">
+                        Of Commerce
+                    </span>
+                </div>
+
+            </a>
+
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="main-navigation">
+                ☰
+            </button>
+
+
+            <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html">
+                            Directory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="active" href="join.html">
+                            Join
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">
+                            Discover
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <section class="page-heading">
+
+            <div class="container">
+
+                <p class="section-label">
+                    Become a Member
+                </p>
+
+                <h1>
+                    Join the Ondo City Chamber
+                </h1>
+
+                <p>
+                    Connect with local businesses, discover opportunities,
+                    and become part of Ondo City's growing business community.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="join-section">
+
+            <div class="join-layout">
+
+
+                <!-- APPLICATION FORM -->
+
+                <div class="join-form-container">
+
+                    <div class="join-form-heading">
+
+                        <p class="section-label">
+                            Membership Application
+                        </p>
+
+                        <h2>
+                            Apply Today
+                        </h2>
+
+                        <p>
+                            Complete the form below to apply for membership.
+                            Fields marked with an asterisk are required.
+                        </p>
+
+                    </div>
+
+
+                    <form class="membership-form" method="get" action="thankyou.html">
+
+                        <!-- FIRST NAME -->
+
+                        <label for="first-name">
+                            First Name
+                            <span class="required">*</span>
+
+                            <input type="text" id="first-name" name="firstName" title="Enter your first name."
+                                autocomplete="given-name" required>
+                        </label>
+
+
+                        <!-- LAST NAME -->
+
+                        <label for="last-name">
+                            Last Name
+                            <span class="required">*</span>
+
+                            <input type="text" id="last-name" name="lastName" title="Enter your last name."
+                                autocomplete="family-name" required>
+                        </label>
+
+
+                        <!-- ORGANIZATIONAL TITLE -->
+
+                        <label for="organization-title">
+                            Organizational Title
+
+                            <input type="text" id="organization-title" name="organizationTitle"
+                                title="Enter your title within your organization. Use at least seven letters, spaces, or hyphens."
+                                autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+                        </label>
+
+
+                        <!-- EMAIL -->
+
+                        <label for="email">
+                            Email Address
+                            <span class="required">*</span>
+
+                            <input type="email" id="email" name="email" title="Enter a valid email address."
+                                autocomplete="email" placeholder="example@email.com" required>
+                        </label>
+
+
+                        <!-- PHONE -->
+
+                        <label for="phone">
+                            Mobile Phone Number
+                            <span class="required">*</span>
+
+                            <input type="tel" id="phone" name="phone" title="Enter your mobile phone number."
+                                autocomplete="tel" required>
+                        </label>
+
+
+                        <!-- ORGANIZATION -->
+
+                        <label for="organization">
+                            Business / Organization Name
+                            <span class="required">*</span>
+
+                            <input type="text" id="organization" name="organization"
+                                title="Enter your business or organization name." autocomplete="organization" required>
+                        </label>
+
+
+                        <!-- MEMBERSHIP -->
+
+                        <fieldset>
+
+                            <legend>
+                                Membership Level
+                            </legend>
+
+
+                            <label class="radio-option">
+
+                                <input type="radio" name="membership" value="np" required>
+
+                                NP Membership
+                                <span class="membership-price">
+                                    Free
+                                </span>
+
+                            </label>
+
+
+                            <label class="radio-option">
+
+                                <input type="radio" name="membership" value="bronze">
+
+                                Bronze Membership
+                                <span class="membership-price">
+                                    ₦25,000/year
+                                </span>
+
+                            </label>
+
+
+                            <label class="radio-option">
+
+                                <input type="radio" name="membership" value="silver">
+
+                                Silver Membership
+                                <span class="membership-price">
+                                    ₦50,000/year
+                                </span>
+
+                            </label>
+
+
+                            <label class="radio-option">
+
+                                <input type="radio" name="membership" value="gold">
+
+                                Gold Membership
+                                <span class="membership-price">
+                                    ₦100,000/year
+                                </span>
+
+                            </label>
+
+                        </fieldset>
+
+
+                        <!-- DESCRIPTION -->
+
+                        <label for="description">
+                            Business / Organization Description
+
+                            <textarea id="description" name="description"
+                                title="Describe your business or organization." rows="6"></textarea>
+
+                        </label>
+
+
+                        <!-- TIMESTAMP -->
+
+                        <input type="hidden" id="timestamp" name="timestamp">
+
+
+                        <!-- SUBMIT -->
+
+                        <input class="submit-button" type="submit" value="Submit Membership Application">
+
+                    </form>
+
+                </div>
+
+
+                <!-- MEMBERSHIP CARDS -->
+
+                <aside class="membership-levels">
+
+                    <div class="membership-heading">
+
+                        <p class="section-label">
+                            Membership Options
+                        </p>
+
+                        <h2>
+                            Choose Your Level
+                        </h2>
+
+                        <p>
+                            Explore the benefits available at each membership
+                            level.
+                        </p>
+
+                    </div>
+
+
+                    <!-- NP -->
+
+                    <article class="membership-card membership-np">
+
+                        <div>
+                            <span class="membership-number">
+                                01
+                            </span>
+
+                            <h3>
+                                NP Membership
+                            </h3>
+
+                            <p>
+                                For nonprofit organizations.
+                            </p>
+                        </div>
+
+                        <button class="modal-link" type="button" data-modal="np-modal">
+                            More Information
+                        </button>
+
+                    </article>
+
+
+                    <!-- BRONZE -->
+
+                    <article class="membership-card membership-bronze">
+
+                        <div>
+                            <span class="membership-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Bronze Membership
+                            </h3>
+
+                            <p>
+                                Essential support for growing businesses.
+                            </p>
+                        </div>
+
+                        <button class="modal-link" type="button" data-modal="bronze-modal">
+                            More Information
+                        </button>
+
+                    </article>
+
+
+                    <!-- SILVER -->
+
+                    <article class="membership-card membership-silver">
+
+                        <div>
+                            <span class="membership-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Silver Membership
+                            </h3>
+
+                            <p>
+                                More visibility and business opportunities.
+                            </p>
+                        </div>
+
+                        <button class="modal-link" type="button" data-modal="silver-modal">
+                            More Information
+                        </button>
+
+                    </article>
+
+
+                    <!-- GOLD -->
+
+                    <article class="membership-card membership-gold">
+
+                        <div>
+                            <span class="membership-number">
+                                04
+                            </span>
+
+                            <h3>
+                                Gold Membership
+                            </h3>
+
+                            <p>
+                                Premium visibility and chamber benefits.
+                            </p>
+                        </div>
+
+                        <button class="modal-link" type="button" data-modal="gold-modal">
+                            More Information
+                        </button>
+
+                    </article>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- NP MODAL -->
+
+        <dialog id="np-modal" class="membership-modal">
+
+            <div class="modal-content">
+
+                <button class="modal-close" type="button" aria-label="Close NP membership information">
+                    &times;
+                </button>
+
+                <p class="section-label">
+                    Membership Level
+                </p>
+
+                <h2>
+                    NP Membership
+                </h2>
+
+                <p class="modal-price">
+                    No Membership Fee
+                </p>
+
+                <ul>
+                    <li>Membership for nonprofit organizations.</li>
+                    <li>Access to chamber networking opportunities.</li>
+                    <li>Community event participation.</li>
+                    <li>Business and community resources.</li>
+                    <li>Opportunities to connect with local organizations.</li>
+                </ul>
+
+            </div>
+
+        </dialog>
+
+
+        <!-- BRONZE MODAL -->
+
+        <dialog id="bronze-modal" class="membership-modal">
+
+            <div class="modal-content">
+
+                <button class="modal-close" type="button" aria-label="Close Bronze membership information">
+                    &times;
+                </button>
+
+                <p class="section-label">
+                    Membership Level
+                </p>
+
+                <h2>
+                    Bronze Membership
+                </h2>
+
+                <p class="modal-price">
+                    ₦25,000 / Year
+                </p>
+
+                <ul>
+                    <li>All standard chamber networking opportunities.</li>
+                    <li>Business directory listing.</li>
+                    <li>Access to selected training sessions.</li>
+                    <li>Community event participation.</li>
+                    <li>Chamber business resources.</li>
+                </ul>
+
+            </div>
+
+        </dialog>
+
+
+        <!-- SILVER MODAL -->
+
+        <dialog id="silver-modal" class="membership-modal">
+
+            <div class="modal-content">
+
+                <button class="modal-close" type="button" aria-label="Close Silver membership information">
+                    &times;
+                </button>
+
+                <p class="section-label">
+                    Membership Level
+                </p>
+
+                <h2>
+                    Silver Membership
+                </h2>
+
+                <p class="modal-price">
+                    ₦50,000 / Year
+                </p>
+
+                <ul>
+                    <li>All Bronze membership benefits.</li>
+                    <li>Additional business training opportunities.</li>
+                    <li>Discounts on selected chamber events.</li>
+                    <li>Enhanced business directory listing.</li>
+                    <li>Eligibility for homepage spotlight opportunities.</li>
+                </ul>
+
+            </div>
+
+        </dialog>
+
+
+        <!-- GOLD MODAL -->
+
+        <dialog id="gold-modal" class="membership-modal">
+
+            <div class="modal-content">
+
+                <button class="modal-close" type="button" aria-label="Close Gold membership information">
+                    &times;
+                </button>
+
+                <p class="section-label">
+                    Membership Level
+                </p>
+
+                <h2>
+                    Gold Membership
+                </h2>
+
+                <p class="modal-price">
+                    ₦100,000 / Year
+                </p>
+
+                <ul>
+                    <li>All Silver membership benefits.</li>
+                    <li>Premium business visibility opportunities.</li>
+                    <li>Priority access to selected chamber events.</li>
+                    <li>Additional promotional opportunities.</li>
+                    <li>Priority consideration for homepage spotlights.</li>
+                    <li>Enhanced networking and training opportunities.</li>
+                </ul>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h2>
+                    Ondo City Chamber of Commerce
+                </h2>
+
+                <p>
+                    Supporting local businesses and encouraging
+                    economic growth in Ondo City.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <address>
+                    Ondo City, Ondo State, Nigeria
+                </address>
+
+                <p>
+                    <a href="mailto:info@ondocitychamber.example">
+                        info@ondocitychamber.example
+                    </a>
+                </p>
+
+                <p>
+                    <a href="tel:+2348000000000">
+                        +234 800 000 0000
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h3>
+                    Connect
+                </h3>
+
+                <p>
+                    Follow the chamber and discover opportunities
+                    in our local business community.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy;
+                <span id="current-year"></span>
+                Ondo City Chamber of Commerce
+            </p>
+
+            <p>
+                Precious Anietem | WDD 231
+            </p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+    ```
+
+</body>
+
+</html>

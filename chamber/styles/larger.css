@@ -210,3 +210,44 @@ HOME PAGE - LARGER SCREENS
         height: 650px;
     }
 }
+
+
+/* =========================================
+JOIN PAGE - LARGER SCREENS
+========================================= */
+
+@media screen and (min-width: 768px) {
+
+
+.join-section {
+    padding: 4rem 1.5rem 5rem;
+}
+
+.join-layout {
+    grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.8fr);
+    align-items: start;
+    gap: 2.5rem;
+}
+
+.join-form-container {
+    padding: 2rem;
+}
+
+.membership-levels {
+    position: sticky;
+    top: 1rem;
+}
+
+
+}
+
+@media screen and (min-width: 1000px) {
+
+
+.join-layout {
+    grid-template-columns: 1.6fr 1fr;
+    gap: 3rem;
+}
+
+
+}
