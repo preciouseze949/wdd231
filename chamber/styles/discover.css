@@ -1,4 +1,3 @@
-
 /* =========================================
    DISCOVER PAGE
 ========================================= */
@@ -30,7 +29,7 @@
     font-size: clamp(1.6rem, 4vw, 2.3rem);
 }
 
-.discover-intro > p:last-child {
+.discover-intro>p:last-child {
     color: var(--text-light);
 }
 
@@ -63,14 +62,37 @@
     animation-delay: calc(var(--card-index, 1) * 40ms);
 }
 
-.place-card:nth-child(1) { grid-area: idanre; }
-.place-card:nth-child(2) { grid-area: owo; }
-.place-card:nth-child(3) { grid-area: igbo; }
-.place-card:nth-child(4) { grid-area: igbokoda; }
-.place-card:nth-child(5) { grid-area: maria; }
-.place-card:nth-child(6) { grid-area: ebomi; }
-.place-card:nth-child(7) { grid-area: iho; }
-.place-card:nth-child(8) { grid-area: forest; }
+.place-card:nth-child(1) {
+    grid-area: idanre;
+}
+
+.place-card:nth-child(2) {
+    grid-area: owo;
+}
+
+.place-card:nth-child(3) {
+    grid-area: igbo;
+}
+
+.place-card:nth-child(4) {
+    grid-area: igbokoda;
+}
+
+.place-card:nth-child(5) {
+    grid-area: maria;
+}
+
+.place-card:nth-child(6) {
+    grid-area: ebomi;
+}
+
+.place-card:nth-child(7) {
+    grid-area: iho;
+}
+
+.place-card:nth-child(8) {
+    grid-area: forest;
+}
 
 .place-card h2 {
     margin-bottom: 0.85rem;
