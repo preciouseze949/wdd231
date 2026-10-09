@@ -1,0 +1,260 @@
+/* Mrpee Shoes Site Plan
+   Color scheme: brown, beige, and muted gold
+*/
+
+:root {
+    --deep-brown: #3E2723;
+    --warm-beige: #F5E6D3;
+    --muted-gold: #C49A45;
+    --charcoal: #292524;
+    --white: #FFFFFF;
+    --border-color: #D8C4AA;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--warm-beige);
+    color: var(--charcoal);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.site-header {
+    padding: 2rem 1rem;
+    background-color: var(--deep-brown);
+    color: var(--white);
+    text-align: center;
+}
+
+.brand-name {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.brand-name span {
+    color: var(--muted-gold);
+}
+
+.tagline {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+}
+
+main {
+    width: min(100% - 2rem, 900px);
+    margin: 2rem auto;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--deep-brown);
+    font-family: "Playfair Display", serif;
+    line-height: 1.3;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    text-align: center;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.plan-section {
+    margin-bottom: 2rem;
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(62 39 35 / 8%);
+}
+
+.plan-section h2 {
+    margin-top: 0;
+    padding-bottom: 0.6rem;
+    border-bottom: 3px solid var(--muted-gold);
+}
+
+.plan-section h3 {
+    margin-bottom: 0.4rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+}
+
+code {
+    color: var(--deep-brown);
+    font-weight: 600;
+}
+
+.note {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.color-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.color-item h3,
+.color-item p {
+    margin: 0.2rem 0;
+}
+
+.color-swatch {
+    flex: 0 0 75px;
+    width: 75px;
+    height: 75px;
+    border: 1px solid #B8B0A8;
+    border-radius: 8px;
+}
+
+.deep-brown {
+    background-color: var(--deep-brown);
+}
+
+.warm-beige {
+    background-color: var(--warm-beige);
+}
+
+.muted-gold {
+    background-color: var(--muted-gold);
+}
+
+.charcoal {
+    background-color: var(--charcoal);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.font-example {
+    margin-top: 1rem;
+    padding: 1.25rem;
+    border-left: 5px solid var(--muted-gold);
+    background-color: var(--warm-beige);
+}
+
+.font-example h3 {
+    margin-top: 0;
+}
+
+.playfair-example .sample-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.poppins-example .sample-body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.wireframe-figure {
+    margin: 1rem 0 2rem;
+}
+
+.wireframe-placeholder {
+    display: grid;
+    min-height: 180px;
+    padding: 1.5rem;
+    place-items: center;
+    border: 2px dashed var(--deep-brown);
+    background-color: #F8F8F8;
+    color: var(--charcoal);
+    text-align: center;
+}
+
+.wireframe-placeholder p {
+    max-width: 350px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.site-footer {
+    padding: 1.5rem 1rem;
+    background-color: var(--deep-brown);
+    color: var(--white);
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0.4rem 0;
+}
+
+@media screen and (min-width: 650px) {
+    main {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .color-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .wireframe-placeholder {
+        min-height: 240px;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.wireframe-image {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 1rem auto;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.wireframe-figure {
+    margin: 1.5rem 0 2rem;
+}
+
+.wireframe-figure figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
