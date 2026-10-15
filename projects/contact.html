@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact Mrpee Shoes with questions about our footwear, collections, or customer service.">
+    <meta name="author" content="Precious Anietem">
+
+    <meta property="og:title" content="Contact | Mrpee Shoes">
+    <meta property="og:description" content="Get in touch with Mrpee Shoes for questions and footwear enquiries.">
+    <meta property="og:type" content="website">
+
+    <title>Contact | Mrpee Shoes</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/site.js" type="module"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Mrpee Shoes home">
+            <span class="brand-mark">MP</span>
+            <span class="brand-name">Mrpee Shoes</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="primary-navigation">☰</button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a class="active" href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+            <h1>Contact Us</h1>
+            <p>
+                Have a question about our footwear or collections?
+                Send us a message using the form below.
+            </p>
+        </section>
+
+        <section class="contact-layout section-container">
+            <aside class="contact-information">
+                <h2>Let's Talk</h2>
+                <p>
+                    We're happy to hear your feedback, questions, and suggestions
+                    about the Mrpee Shoes experience.
+                </p>
+
+                <h3>Customer Enquiries</h3>
+                <p>Use the contact form to share your message with us.</p>
+
+                <h3>Our Promise</h3>
+                <p>
+                    We aim to make discovering your next pair of shoes simple,
+                    enjoyable, and inspiring.
+                </p>
+            </aside>
+
+            <div>
+                <h2>Send a Message</h2>
+
+                <form class="contact-form" action="form-action.html" method="get">
+                    <div class="form-field">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Choose a subject</option>
+                            <option value="Product enquiry">Product enquiry</option>
+                            <option value="Collection feedback">Collection feedback</option>
+                            <option value="General question">General question</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" minlength="10" maxlength="1000"
+                            aria-describedby="message-help" required></textarea>
+                        <span class="form-help" id="message-help">
+                            Please write between 10 and 1,000 characters.
+                        </span>
+                    </div>
+
+                    <button class="button button-primary" type="submit">
+                        Submit Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <a class="footer-brand" href="index.html">Mrpee Shoes</a>
+                <p>Crafted for Comfort. Designed for Style.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="attributions.html">Image Attributions</a>
+            </div>
+
+            <div class="footer-project-info">
+                <p>&copy; <span id="current-year"></span> Mrpee Shoes</p>
+                <p>Designed by Precious Anietem</p>
+                <a href="#" id="video-link">Project Demonstration Video</a>
+            </div>
+        </div>
+
+        <p class="footer-note">
+            All product names and prices are provided for demonstration purposes.
+        </p>
+    </footer>
+</body>
+
+</html>

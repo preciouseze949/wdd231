@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Mrpee Shoes about footwear, orders, and custom shoe requests.">
+    <meta name="author" content="Precious Anietem">
+    <meta property="og:title" content="Contact Mrpee Shoes">
+    <meta property="og:description" content="Ask about footwear, availability, and custom orders from Mrpee Shoes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/project/contact.html">
+    <title>Contact Us | Mrpee Shoes</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+    <script type="module" src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Mrpee Shoes home">
+                <span class="brand-mark" aria-hidden="true">M</span>
+                <span class="brand-text">
+                    <strong>Mrpee Shoes</strong>
+                    <small>CRAFTED FOR COMFORT</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-nav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a class="header-favorites" href="collections.html#favorites-section">
+                Favorites <span class="favorite-count" id="favorite-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-banner">
+            <div class="container">
+                <p class="eyebrow">Let's talk footwear</p>
+                <h1>Get in Touch</h1>
+                <p>
+                    Have a question about a design or a custom order?
+                    Send us an enquiry using the form below.
+                </p>
+            </div>
+        </section>
+
+        <section class="container contact-layout">
+            <div>
+                <p class="eyebrow">We are here to help</p>
+                <h2>Let's find the right fit for you.</h2>
+                <p class="contact-intro">
+                    Tell us what you are looking for, and provide as much detail
+                    as you can. You can enquire about a product, ask about
+                    materials, or discuss a custom footwear request.
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <h3>Product enquiries</h3>
+                        <p>Ask about product details, available styles, and pricing.</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h3>Custom orders</h3>
+                        <p>Describe your preferred style, colour, and materials.</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h3>Location</h3>
+                        <p>Nigeria. Contact us to discuss availability and arrangements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" action="form-action.html" method="get">
+                <div>
+                    <p class="eyebrow">Send an enquiry</p>
+                    <h2>How can we help?</h2>
+                </div>
+
+                <div class="form-field">
+                    <label for="customer-name">Full name <span class="required">*</span></label>
+                    <input id="customer-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="customer-email">Email address <span class="required">*</span></label>
+                    <input id="customer-email" name="email" type="email" autocomplete="email" maxlength="120" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="customer-phone">Phone number (optional)</label>
+                    <input id="customer-phone" name="phone" type="tel" autocomplete="tel" maxlength="30">
+                </div>
+
+                <div class="form-field">
+                    <label for="enquiry-type">What is your enquiry about? <span class="required">*</span></label>
+                    <select id="enquiry-type" name="enquiry" required>
+                        <option value="">Select an enquiry type</option>
+                        <option value="Product information">Product information</option>
+                        <option value="Pricing and availability">Pricing and availability</option>
+                        <option value="Custom order">Custom order</option>
+                        <option value="Other question">Other question</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="product-interest">Product or style of interest</label>
+                    <input id="product-interest" name="product" type="text" maxlength="100"
+                        placeholder="e.g. Classic Oxford">
+                </div>
+
+                <div class="form-field">
+                    <label for="customer-message">Your message <span class="required">*</span></label>
+                    <textarea id="customer-message" name="message" rows="5" minlength="10" maxlength="1000" required
+                        placeholder="Tell us what you would like to know."></textarea>
+                    <span class="form-help">Please write between 10 and 1,000 characters.</span>
+                </div>
+
+                <div class="checkbox-field">
+                    <input id="privacy-agreement" name="agreement" type="checkbox" value="yes" required>
+                    <label for="privacy-agreement">
+                        I understand this is a demonstration enquiry form for a
+                        student website project. <span class="required">*</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button class="button button-dark" type="submit">Submit enquiry →</button>
+                    <button class="button button-outline" type="reset">Clear form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a class="brand brand-light" href="index.html">
+                    <span class="brand-mark" aria-hidden="true">M</span>
+                    <span class="brand-text">
+                        <strong>Mrpee Shoes</strong>
+                        <small>CRAFTED FOR COMFORT</small>
+                    </span>
+                </a>
+                <p>Crafted for Comfort. Designed for Style.</p>
+            </div>
+
+            <div class="footer-links">
+                <h2>EXPLORE</h2>
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+
+            <div class="footer-links">
+                <h2>PROJECT</h2>
+                <a href="attributions.html">Attributions</a>
+                <a href="siteplan.html">Site plan</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; <span id="current-year"></span> Mrpee Shoes</p>
+            <p>WDD 231 Individual Website Project · Precious Anietem</p>
+        </div>
+    </footer>
+</body>
+
+</html>

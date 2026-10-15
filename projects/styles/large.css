@@ -1,0 +1,134 @@
+/* ==============================
+   Mrpee Shoes - Large Screens
+   ============================== */
+
+@media (min-width: 900px) {
+    .site-header {
+        padding: 1rem max(2rem, calc((100% - 1200px) / 2));
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .primary-navigation {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .primary-navigation a {
+        padding: 0.65rem 1rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 3rem;
+        padding: 4rem max(2rem, calc((100% - 1200px) / 2));
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3rem, 4vw, 4.5rem);
+    }
+
+    .hero-image img {
+        min-height: 420px;
+        max-height: 520px;
+    }
+
+    .benefits {
+        padding-block: 5rem;
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .benefit-card {
+        padding: 2rem;
+    }
+
+    .featured-section {
+        padding-block: 5rem;
+    }
+
+    .section-heading {
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .featured-grid,
+    .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .product-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgb(0 0 0 / 10%);
+    }
+
+    .product-card img {
+        height: 270px;
+    }
+
+    .collection-controls {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: end;
+    }
+
+    .call-to-action {
+        padding-block: 5rem;
+    }
+
+    .contact-layout {
+        gap: 3rem;
+        padding-block: 4rem;
+    }
+
+    .contact-information {
+        padding: 2rem;
+    }
+
+    .submission-section {
+        padding: 2.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Extra-wide screens */
+
+@media (min-width: 1200px) {
+    .featured-grid,
+    .product-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

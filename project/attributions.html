@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sources and attributions for the Mrpee Shoes website project.">
+    <meta name="author" content="Precious Anietem">
+    <title>Attributions | Mrpee Shoes</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+    <script type="module">
+        import { initializeSite } from "./scripts/modules/site.js";
+        initializeSite();
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Mrpee Shoes home">
+                <span class="brand-mark" aria-hidden="true">M</span>
+                <span class="brand-text">
+                    <strong>Mrpee Shoes</strong>
+                    <small>CRAFTED FOR COMFORT</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button"
+                aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-nav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-banner">
+            <div class="container">
+                <p class="eyebrow">Credits and sources</p>
+                <h1>Attributions</h1>
+                <p>
+                    This page identifies external resources used in the
+                    Mrpee Shoes student website project.
+                </p>
+            </div>
+        </section>
+
+        <section class="container attribution-list">
+            <article class="attribution-item">
+                <h2>Product and footwear photography</h2>
+                <p>
+                    Temporary footwear images are loaded from Unsplash image
+                    URLs. Images are used for educational demonstration purposes.
+                    Confirm the exact source page and applicable license for
+                    each image before final submission.
+                </p>
+                <p>
+                    Source:
+                    <a href="https://unsplash.com/" target="_blank"
+                        rel="noopener noreferrer">Unsplash</a>
+                </p>
+            </article>
+
+            <article class="attribution-item">
+                <h2>Typography</h2>
+                <p>
+                    Playfair Display is used for headings, and Poppins is used
+                    for body text, navigation, forms, and product details.
+                </p>
+                <p>
+                    Source:
+                    <a href="https://fonts.google.com/" target="_blank"
+                        rel="noopener noreferrer">Google Fonts</a>
+                </p>
+            </article>
+
+            <article class="attribution-item">
+                <h2>Icons and interface symbols</h2>
+                <p>
+                    The initial design uses text characters and CSS for its
+                    brand mark, menu, and favorite controls. No external icon
+                    library is required.
+                </p>
+            </article>
+
+            <article class="attribution-item">
+                <h2>Website content and code</h2>
+                <p>
+                    Mrpee Shoes is a student website concept developed for
+                    WDD 231 by Precious Anietem. Product names, descriptions,
+                    and example prices are illustrative.
+                </p>
+            </article>
+
+            <article class="attribution-item">
+                <h2>Project demonstration</h2>
+                <p>
+                    Add your actual project demonstration video URL to the
+                    website footer after you record and publish your video.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <p>&copy; <span id="current-year"></span> Mrpee Shoes</p>
+            <p>WDD 231 Individual Website Project · Precious Anietem</p>
+        </div>
+    </footer>
+</body>
+</html>

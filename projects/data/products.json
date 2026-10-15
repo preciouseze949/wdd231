@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Red Runner",
+        "category": "Sneakers",
+        "price": 28500,
+        "material": "Mesh and rubber",
+        "color": "Red",
+        "description": "A bold everyday sneaker with a sporty silhouette.",
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 2,
+        "name": "Urban White Sneaker",
+        "category": "Sneakers",
+        "price": 32000,
+        "material": "Synthetic leather",
+        "color": "White",
+        "description": "A clean, versatile sneaker for casual outfits.",
+        "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 3,
+        "name": "Everyday Street Shoe",
+        "category": "Casual",
+        "price": 27000,
+        "material": "Canvas",
+        "color": "Black",
+        "description": "A simple casual shoe for relaxed everyday wear.",
+        "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 4,
+        "name": "Heritage Leather Loafer",
+        "category": "Formal",
+        "price": 45000,
+        "material": "Leather",
+        "color": "Brown",
+        "description": "A refined loafer for smart and formal occasions.",
+        "image": "https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 5,
+        "name": "Weekend Comfort Slide",
+        "category": "Sandals",
+        "price": 16000,
+        "material": "EVA foam",
+        "color": "Black",
+        "description": "A lightweight slide designed for easy everyday comfort.",
+        "image": "https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 6,
+        "name": "Active Pace Trainer",
+        "category": "Sports",
+        "price": 39000,
+        "material": "Mesh and rubber",
+        "color": "Blue",
+        "description": "A sporty trainer for movement and active days.",
+        "image": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 7,
+        "name": "Midnight Formal Shoe",
+        "category": "Formal",
+        "price": 48000,
+        "material": "Polished leather",
+        "color": "Black",
+        "description": "A classic formal shoe for work and special events.",
+        "image": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 8,
+        "name": "Canvas Day Walker",
+        "category": "Casual",
+        "price": 22000,
+        "material": "Canvas and rubber",
+        "color": "Cream",
+        "description": "An easygoing canvas shoe with a timeless profile.",
+        "image": "https://images.unsplash.com/photo-1520256862855-398228c41684?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 9,
+        "name": "Golden Hour Heel",
+        "category": "Heels",
+        "price": 36000,
+        "material": "Synthetic leather",
+        "color": "Tan",
+        "description": "A stylish heel for celebrations and evening outfits.",
+        "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 10,
+        "name": "City Explorer Boot",
+        "category": "Boots",
+        "price": 52000,
+        "material": "Leather and rubber",
+        "color": "Brown",
+        "description": "A sturdy boot with a versatile urban look.",
+        "image": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 11,
+        "name": "Soft Step Flat",
+        "category": "Flats",
+        "price": 24000,
+        "material": "Synthetic leather",
+        "color": "Beige",
+        "description": "A simple flat for comfortable everyday styling.",
+        "image": "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 12,
+        "name": "Active Flex Runner",
+        "category": "Sports",
+        "price": 41000,
+        "material": "Breathable mesh",
+        "color": "Grey",
+        "description": "A flexible running-inspired shoe for active routines.",
+        "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 13,
+        "name": "Modern Strap Sandal",
+        "category": "Sandals",
+        "price": 19000,
+        "material": "Synthetic leather",
+        "color": "Tan",
+        "description": "A versatile sandal with a clean, modern design.",
+        "image": "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 14,
+        "name": "Classic Court Sneaker",
+        "category": "Sneakers",
+        "price": 34000,
+        "material": "Synthetic leather and rubber",
+        "color": "White and green",
+        "description": "A court-inspired sneaker for casual everyday outfits.",
+        "image": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=60"
+    },
+    {
+        "id": 15,
+        "name": "Evening Elegance Heel",
+        "category": "Heels",
+        "price": 39500,
+        "material": "Synthetic leather",
+        "color": "Black",
+        "description": "An elegant heel for dressy occasions and evenings out.",
+        "image": "https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=700&q=60"
+    }
+]

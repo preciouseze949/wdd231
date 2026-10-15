@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore the Mrpee Shoes collection of sneakers, casual shoes, formal footwear, sandals, and more.">
+    <meta name="author" content="Precious Anietem">
+
+    <meta property="og:title" content="Collections | Mrpee Shoes">
+    <meta property="og:description" content="Find your next favourite pair in the Mrpee Shoes footwear collection.">
+    <meta property="og:type" content="website">
+
+    <title>Collections | Mrpee Shoes</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/site.js" type="module"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Mrpee Shoes home">
+            <span class="brand-mark">MP</span>
+            <span class="brand-name">Mrpee Shoes</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="primary-navigation">☰</button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="collections.html" aria-current="page">Collections</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <p class="eyebrow">FIND YOUR FIT</p>
+            <h1>Our Collections</h1>
+            <p>
+                From everyday essentials to standout styles, explore footwear
+                for different occasions, outfits, and personal tastes.
+            </p>
+        </section>
+
+        <section class="collection-section section-container">
+            <div class="collection-controls">
+                <div class="form-field">
+                    <label for="product-search">Search footwear</label>
+                    <input id="product-search" type="search" placeholder="Search by name, colour, or material">
+                </div>
+
+                <div class="form-field">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter">
+                        <option value="all">All categories</option>
+                        <option value="Sneakers">Sneakers</option>
+                        <option value="Casual">Casual</option>
+                        <option value="Formal">Formal</option>
+                        <option value="Sandals">Sandals</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Heels">Heels</option>
+                        <option value="Boots">Boots</option>
+                        <option value="Flats">Flats</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="sort-filter">Sort by</label>
+                    <select id="sort-filter">
+                        <option value="default">Recommended order</option>
+                        <option value="name">Name: A to Z</option>
+                        <option value="price-low">Price: low to high</option>
+                        <option value="price-high">Price: high to low</option>
+                    </select>
+                </div>
+            </div>
+
+            <p class="results-count" id="results-count" aria-live="polite">
+                Loading products...
+            </p>
+
+            <div class="product-grid" id="product-list">
+                <p class="loading-message">Loading our collection...</p>
+            </div>
+
+            <dialog id="product-dialog" aria-labelledby="dialog-title">
+                <button class="dialog-close" id="dialog-close" type="button"
+                    aria-label="Close product details">&times;</button>
+                <div id="dialog-content"></div>
+            </dialog>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <a class="footer-brand" href="index.html">Mrpee Shoes</a>
+                <p>Crafted for Comfort. Designed for Style.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="attributions.html">Image Attributions</a>
+            </div>
+
+            <div class="footer-project-info">
+                <p>&copy; <span id="current-year"></span> Mrpee Shoes</p>
+                <p>Designed by Precious Anietem</p>
+                <a href="#" id="video-link">Project Demonstration Video</a>
+            </div>
+        </div>
+
+        <p class="footer-note">
+            All product names and prices are provided for demonstration purposes.
+        </p>
+    </footer>
+</body>
+
+</html>

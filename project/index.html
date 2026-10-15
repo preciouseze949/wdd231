@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover Mrpee Shoes, featuring stylish footwear designed for comfort, quality, and everyday elegance.">
+    <meta name="author" content="Precious Anietem">
+
+    <meta property="og:title" content="Mrpee Shoes | Crafted for Comfort, Designed for Style">
+    <meta property="og:description"
+        content="Explore footwear styles that combine comfort, timeless design, and everyday elegance.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/project/">
+
+    <title>Mrpee Shoes | Crafted for Comfort, Designed for Style</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Mobile-first stylesheet -->
+    <link rel="stylesheet" href="styles/small.css">
+
+    <!-- Enhancements for larger screens -->
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a class="brand" href="index.html" aria-label="Mrpee Shoes home">
+                <span class="brand-mark" aria-hidden="true">M</span>
+
+                <span class="brand-text">
+                    <strong>Mrpee Shoes</strong>
+                    <small>CRAFTED WITH PURPOSE</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-controls="primary-nav" aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a class="header-favorites" href="collections.html#favorites-section">
+                Favorites
+                <span class="favorite-count" id="favorite-count">0</span>
+            </a>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Hero section -->
+        <section class="container hero" aria-labelledby="hero-title">
+
+            <div class="hero-copy">
+                <p class="eyebrow">STYLE THAT MOVES WITH YOU</p>
+
+                <h1 id="hero-title">
+                    Crafted for Comfort.
+                    <span>Designed for Style.</span>
+                </h1>
+
+                <p class="hero-intro">
+                    Discover footwear that brings together timeless design,
+                    everyday comfort, and a confident sense of style.
+                    Find the pair that feels as good as it looks.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-dark" href="collections.html">
+                        Explore Collections
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                    <a class="text-link" href="#craftsmanship">
+                        Discover our approach
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-line" aria-hidden="true"></span>
+                    <span>EVERY STEP TELLS A STORY</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                    alt="Elegant footwear representing the Mrpee Shoes style" width="1000" height="1200"
+                    fetchpriority="high">
+
+                <div class="hero-stamp">
+                    <span>01</span>
+                    <strong>MRPEE SHOES</strong>
+                    <small>QUALITY IN EVERY STEP</small>
+                </div>
+
+                <p class="hero-caption">Made for your journey.</p>
+            </div>
+
+        </section>
+
+        <!-- Brand benefits -->
+        <section class="trust-strip" aria-label="Our design principles">
+            <div class="container trust-grid">
+
+                <p>
+                    <span aria-hidden="true">✦</span>
+                    Timeless Design
+                </p>
+
+                <p>
+                    <span aria-hidden="true">✦</span>
+                    Everyday Comfort
+                </p>
+
+                <p>
+                    <span aria-hidden="true">✦</span>
+                    Style with Purpose
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Featured footwear -->
+        <section class="container section" id="featured" aria-labelledby="featured-title">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE MRPEE EDIT</p>
+                    <h2 id="featured-title">Featured Footwear</h2>
+                </div>
+
+                <a class="text-link" href="collections.html">
+                    View all collections
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+
+            <p class="section-intro">
+                Explore a selection of classic and contemporary styles
+                suited to different occasions and personal tastes.
+            </p>
+
+            <div class="product-grid product-grid-home" id="featured-products" aria-live="polite" aria-busy="true">
+
+                <p class="status-message">
+                    Loading our featured footwear...
+                </p>
+
+            </div>
+
+            <p class="catalogue-note">
+                Products, images, descriptions, and prices on this
+                demonstration website are illustrative examples.
+            </p>
+
+        </section>
+
+        <!-- Craftsmanship and brand story -->
+        <section class="craft-section" id="craftsmanship" aria-labelledby="craft-title">
+
+            <div class="container craft-grid">
+
+                <div class="craft-image">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                        alt="Footwear showcasing a bold design and attention to style" width="900" height="1100"
+                        loading="lazy">
+                </div>
+
+                <div class="craft-copy">
+                    <p class="eyebrow">MORE THAN JUST SHOES</p>
+
+                    <h2 id="craft-title">
+                        Where Comfort Meets Character
+                    </h2>
+
+                    <p>
+                        At Mrpee Shoes, our vision is to bring together
+                        thoughtful design, practical comfort, and
+                        individual expression. We believe the right
+                        footwear can complement your outfit and help you
+                        move through the day with confidence.
+                    </p>
+
+                    <div class="craft-points">
+
+                        <div>
+                            <span aria-hidden="true">01</span>
+                            <p>
+                                <strong>Considered Design</strong>
+                                <span>Styles inspired by timeless elegance
+                                    and modern living.</span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <span aria-hidden="true">02</span>
+                            <p>
+                                <strong>Comfort in Mind</strong>
+                                <span>Footwear concepts designed around
+                                    everyday practicality.</span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <span aria-hidden="true">03</span>
+                            <p>
+                                <strong>Personal Expression</strong>
+                                <span>Options to complement different
+                                    occasions and individual tastes.</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <a class="button button-outline" href="collections.html">
+                        Find Your Style
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact call to action -->
+        <section class="container closing-cta">
+            <div>
+                <p class="eyebrow">YOUR NEXT FAVOURITE PAIR</p>
+                <h2>Let's Find Your Perfect Fit.</h2>
+            </div>
+
+            <a class="button button-dark" href="contact.html">
+                Contact Us
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+                <a class="brand brand-light" href="index.html">
+                    <span class="brand-mark" aria-hidden="true">M</span>
+
+                    <span class="brand-text">
+                        <strong>Mrpee Shoes</strong>
+                        <small>CRAFTED WITH PURPOSE</small>
+                    </span>
+                </a>
+
+                <p>
+                    Crafted for Comfort. Designed for Style.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h2>EXPLORE</h2>
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h2>PROJECT INFORMATION</h2>
+
+                <a href="attributions.html">
+                    Image and Resource Credits
+                </a>
+
+                <!-- Replace with your actual public demonstration URL. -->
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    Project Demonstration Video
+                </a>
+
+                <p class="video-status">
+                    Replace this link with your own project demonstration.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                &copy; <span id="current-year">2026</span>
+                Mrpee Shoes. All rights reserved.
+            </p>
+
+            <p>Website project by Precious Anietem.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
